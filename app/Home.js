@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <View className='max-h-full min-h-full'>
       <View className=''>
-        <Image className=' w-96 h-48 mx-1' source={require('../assets/bg1.png')} />
+        <Image className=' w-96 h-48 mx-1' source={require('../assets/bg-home.png')} />
         <Text className='absolute px-6 py-2  font-bold border border-slate-200 rounded-b-2xl ml-36 bg-white'>Home</Text>
         <View className="absolute z-10 ml-16 mt-28" >
         <View className="w-64 h-[70px]  bg-white px-2 py-[9px] absolute flex flex-row justify-center gap-1  rounded-3xl">

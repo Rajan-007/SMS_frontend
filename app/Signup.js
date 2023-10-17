@@ -5,7 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link } from "expo-router";
 
-export default function Login() {
+export default function Signup() {
   const handlePress = () => {
     console.log('Button Pressed');
   };
@@ -34,7 +34,7 @@ export default function Login() {
     <TextInput secureTextEntry placeholder=' Confirm Password' className="w-80 bg-slate-100 border rounded-xl ml-10 mt-10 px-2 py-3 flex flex-row justify-center border-black" />
     <TouchableOpacity className="ml-32 mt-10 " onPress={handlePress}>
     <View >
-      <Link href="Login">
+      <Link href='/'>
         <LinearGradient className="
         border-cyan-300 rounded-full border w-32"
           colors={['#44fdff', '#B2FFFA', '#f4f4f4']}
