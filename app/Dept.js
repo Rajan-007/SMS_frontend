@@ -12,7 +12,7 @@ import { Picker } from '@react-native-picker/picker';
 export default function Dept() {
   const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
   const currentYear = new Date().getFullYear();
-  const years = Array.from({ length: 50 }, (_, index) => currentYear - index); // Last 50 years
+  const years = Array.from({ length: 20 }, (_, index) => currentYear - index); // Last 50 years
 
 
   return (
@@ -23,26 +23,24 @@ export default function Dept() {
         <View className="" >
         </View>
         
-        <View className="absolute flex flex-row justify-center mt-[45px]" >
+        <View className="absolute flex flex-row justify-center  mt-16 z-10" >
         
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      
-      <Picker
-        selectedValue={selectedYear}
-        style={{ height: 50, width: 150 }}
-        onValueChange={(itemValue) => setSelectedYear(itemValue)}
-      >
-        {years.map((year, index) => (
-          <Picker.Item key={index} label={year.toString()} value={year} />
-        ))}
-      </Picker>
-      <Text>Selected Year: {selectedYear}</Text>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <View className='flex mb-[-3px]'>
+        <Text className='text-center text-lg font-semibold' >Select year</Text>
+        <Picker className=' bg-slate-200'
+          selectedValue={selectedYear}
+          style={{ height: 50, width: 150 }}
+          onValueChange={(itemValue) => setSelectedYear(itemValue)}
+        >
+          {years.map((year, index) => (
+            <Picker.Item key={index} label={year.toString()} value={year} />
+          ))}
+        </Picker>
+      </View>
+      <Text className='font-semibold bg-slate-200 px-2 py-2 rounded'>Selected Year: {selectedYear}</Text>
     </View>
 
-        
-        {/* <TouchableOpacity className=' pl-1 pt-2' >
-          <FontAwesome name='search' size={32} onPress={onPress} className=''></FontAwesome>
-        </TouchableOpacity> */}
       </View>
       </View>
       <View>
