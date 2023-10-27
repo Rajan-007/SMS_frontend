@@ -44,7 +44,7 @@ export default function Login() {
         <LinearGradient className="
         border-cyan-300 rounded-full border w-32"
           colors={['#44fdff', '#B2FFFA', '#f4f4f4']}
-          style={styles.button}>
+          style={styles.button} onPress=''>
           <Text className='font-bold text-md text-[#07395c] '>Login</Text>
         </LinearGradient>
       </Link>
