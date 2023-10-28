@@ -12,7 +12,7 @@ export default function Login() {
   };
 
   return (
-    <View className=" flex min-h-screen bg-[#ffffff]">
+    <View className=" flex h-full w-screen bg-[#ffffff]">
     <Image
           source={{
             uri:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4x4HNQCZuz5CzDnNj18egE_9HG7_36SKz4E3l42N-Yv32E0F4fjBOmCp5yX6O6u1TzdD6x-ahxXLnwUU3REh5oEE97ZSUmNrkfv6cxZN8dMgWRvO6x7Hr5XpQi3jl-IODwzWTIXeASunkjIEtrx7AoBfQ5UgzVUE2q2C4_w7CtUN87T43yKtR0nX4wR0/s262/Screenshot%202023-10-10%20205920.png"
@@ -27,6 +27,7 @@ export default function Login() {
           className='' style={styles.logo}
         />
     </View>
+    <View>
     <Text className='mt-10 px-8 text-5xl font-bold '>Login</Text>
     <Text className=' pl-8 text-lg '>Please sign in to continue </Text>
     <TextInput placeholder='Email id' className="w-80 border bg-slate-100 rounded-xl ml-10 mt-20 px-2 py-3 flex flex-row justify-center border-black" />
@@ -50,6 +51,7 @@ export default function Login() {
       </Link>
     </View>
     </TouchableOpacity>
+    </View>
     <View className='flex-1 flex-row justify-center items-end z-[1] mb-10'>
       <Text>Don't have an account ?</Text>
       

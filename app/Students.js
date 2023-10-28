@@ -132,7 +132,7 @@ export default function Students() {
             </View>
             </TouchableOpacity>
           </Link>
-        <Link href='Student_profile' className='mt-6 mb-32'>
+        <Link href='Student_profile' className='mt-6 mb-44'>
             <TouchableOpacity>
             <View  className='bg-[#EFEFEF] h-56 w-84 px-3  mx-3 rounded-2xl'>
               <View className='px-2 '>

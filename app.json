@@ -8,6 +8,18 @@
       "expo-router"
     ],
     "name": "jec-sms",
-    "slug": "jec-sms"
+    "slug": "sms",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "5c0008c6-297e-4376-8c14-474b3b751eea"
+      }
+    },
+    "owner": "rajan-007",
+    "android": {
+      "package": "com.rajan007.sms"
+    }
   }
 }

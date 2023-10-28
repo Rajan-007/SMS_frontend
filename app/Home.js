@@ -127,7 +127,7 @@ export default function Home() {
           
           <Link href='Dept'>
             <TouchableOpacity>
-            <View  className='bg-slate-200 h-52 w-88 px-3 mb-60 mt-8 mx-4 rounded-lg'>
+            <View  className='bg-slate-200 h-52 w-88 px-3 mb-52 mt-8 mx-4 rounded-lg'>
               <View className=' p-2'>
                 <Text className='font-bold text-2xl w-80 pt-2'>Aeronautical Engineering</Text>
                 <Image className='h-36 w-36 ml-44 mt-16 absolute pr-2' source={require('../assets/teacher.png')} />
